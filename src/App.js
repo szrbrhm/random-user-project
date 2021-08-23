@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+  const [itemList, setItemList] = useState([]);
+
+  useEffect(() => {
+  //   fetch('https://https://randomuser.me/api/')
+  // .then(response => response.json())
+  // .then((data) => setItemList(data));
+  axios.get('https://randomuser.me/api/').then((res) => setItemList(res.data));
+
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="container-left">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        </div>
+        <div className="container-right">
+          <h2></h2>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+
+        
+      </div>
+     
     </div>
   );
 }
 
 export default App;
+
+// https://randomuser.me/api/
