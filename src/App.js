@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
      
+     
       <Card item={item}/>
     
     <button onClick={getItem}>Random User</button>
