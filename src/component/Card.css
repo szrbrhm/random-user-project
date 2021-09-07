@@ -1,57 +1,55 @@
-/* .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    border: 2px solid black;
-    height: 100vh;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-} */
-.container-main{
-    border: 1px solid black;
-    width: 500px;
-    height: 400px; 
-    text-align: center;
-    margin-top: 100px;
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center; */
-    /* text-align: center; */
-    border: 2px solid black;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    box-shadow: 10px 10px 0 0 #5fb8ff,
-    15px 15px 0 0 #a1d8ff, 20px 20px 0 0 #cae6ff, 25px 25px 0 0 #e1eeff, 5px 5px 15px 5px transparent, 5px 5px 15px 5px transparent;
+.email,
+.location,
+.phone {
+  display: flex;
+}
+p {
+  display: flex-end;
 }
 
-.main{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    width: 95%;
-    margin-top: 10px;
+.main {
+  height: 400px;
+  
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+
+  margin-top: 100px;
+  padding: 20px 20px;
+  box-shadow: 10px 10px rgba(1, 73, 206, 0.2),
+    15px 15px rgba(111, 154, 235, 0.2);
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
 }
-.img{
-    border: 1px solid black;
-    
+.user-email,
+.user-phone,
+.user-location {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image-title-box {
+  display: flex;
+  align-items: center;
 }
 
+.img {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 20%;
+  display: flex-start;
+}
+.full-name {
+  display: flex-end;
+}
 
-.image{
-    width: 100px;
-    border-radius: 50px;
-   
+.info {
+  margin-left: 80px;
+  font-weight: 500;
 }
-h3{
-    align-items: center;
+
+.text{
+    margin-left: 50px;
 }
-img{
-    width: 30px;
-    /* margin-right: 50px; */
-    /* margin-left: 30px; */
-}
-p{
-    text-align: center;
-}
+
